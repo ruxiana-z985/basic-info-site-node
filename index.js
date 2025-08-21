@@ -25,7 +25,7 @@ const server = http.createServer((req,res)=>{
             if(err){
                 res.statusCode = 404;
             }
-            res.statusCode = 404;
+            res.statusCode = 200;
             res.end(data)
 
         })
@@ -45,7 +45,7 @@ const server = http.createServer((req,res)=>{
             if(err){
                 res.statusCode = 404;
             }
-            res.statusCode = 200;
+            res.statusCode = 404;
             res.end(data)
 
         })

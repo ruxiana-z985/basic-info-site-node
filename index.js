@@ -11,7 +11,7 @@ const server = http.createServer((req,res)=>{
     if(pathname === "/"){
        
        
-        fs.readFile("./index.html","utf8",(err,data)=>{
+        fs.readFile("./index.html",(err,data)=>{
             if(err){
                 res.statusCode = 404;
             }
@@ -21,7 +21,7 @@ const server = http.createServer((req,res)=>{
         })
     }
     else if(pathname === "/about"){
-        fs.readFile("./about.html","utf8",(err,data)=>{
+        fs.readFile("./about.html",(err,data)=>{
             if(err){
                 res.statusCode = 404;
             }
@@ -32,7 +32,7 @@ const server = http.createServer((req,res)=>{
 
     }
     else if(pathname === "/contact-me"){
-            fs.readFile("./contact-me.html","utf8",(err,data)=>{
+            fs.readFile("./contact-me.html",(err,data)=>{
             if(err){
                 res.statusCode = 404;
             }
@@ -41,7 +41,7 @@ const server = http.createServer((req,res)=>{
         })
     }
     else{
-        fs.readFile("./404.html","utf8",(err,data)=>{
+        fs.readFile("./404.html",(err,data)=>{
             if(err){
                 res.statusCode = 404;
             }
